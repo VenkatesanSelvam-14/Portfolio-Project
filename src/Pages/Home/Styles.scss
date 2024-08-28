@@ -1,0 +1,151 @@
+.home{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__text-wrapper{
+        display: flex;
+        justify-content: center;
+       // align-items: center;
+       align-content: center;
+       flex-direction: column;
+
+        h1{
+            color: var(--yellow-theme-main-color);
+            //color:yellow;
+            margin: 0px;
+            font-weight: 500;
+            font-size: 5rem;
+            line-height: 10rem;
+            position: relative;
+            overflow: hidden;
+            white-space:nowrap;
+           // animation : typingEffectAnimation 2.5s steps(30,end);
+           //border-right: 0.15em solid; /* Optional for cursor effect */
+    animation: typingEffectAnimation 2.5s steps(40, end) 1;
+        }
+    }
+    &__contact-me {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+        flex-direction: column;
+        align-items: center;
+        gap:25px;
+    
+        button {
+            cursor: pointer;
+            padding: 10px 70px;
+            font-size: 2rem;
+            background: transparent;
+            color: var(--yellow-theme-main-color);
+            border: 1.5px solid var(--yellow-theme-main-color);
+            border-radius: 4px;
+            font-weight: 500;
+
+            &:hover{
+                background-color: var(--yellow-theme-main-color);
+                color: #000000;
+            }
+        }
+
+        &__icons{
+            display: flex;
+            gap: 10px;
+
+            &:focus{
+                background: var(--yellow-theme-main-color);
+            }
+        }
+
+    }
+    
+}
+
+.home__gitIcon, .home__linkedInIcon {
+    color: var(--yellow-theme-main-color); // Default color
+    transition: color 0.3s; // Smooth transition for color change
+}
+
+.home__gitIcon:hover, .home__linkedInIcon:hover {
+    color: rgba(247, 182, 5, 0.911); // Color on hover
+}
+
+.home__gitIcon:active, .home__linkedInIcon:active {
+    color: rgba(247, 182, 5, 0.911); // Color when clicked (active state)
+}
+
+@media only screen and (max-width: 550px) {
+    .home__text-wrapper h1{
+        font-size: 3rem; //3
+        line-height: 5rem; //5  
+width: 100%;
+
+    }
+   
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+    .home__text-wrapper h1 {
+        font-size: 4rem; //4
+        line-height: 6rem; //6
+        
+        
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+    .home__text-wrapper  h1{
+        font-size: 6rem; //6
+        line-height: 8rem; //8
+       
+       
+    }
+}
+
+// @media only screen and (max-width: 550px) {
+//     .home__text-wrapper {
+//         font-size: 8vw; /* Scales with viewport width */
+//         line-height: 1.2; /* Maintain a consistent line height */
+//         width: 100%;
+//     }
+// }
+
+// @media only screen and (min-width: 551px) and (max-width: 768px) {
+//     .home__text-wrapper {
+//         font-size: 6vw; /* Scales with viewport width */
+//         line-height: 1.2;
+//     }
+// }
+
+// @media only screen and (min-width: 769px) and (max-width: 990px) {
+//     .home__text-wrapper {
+//         font-size: 5vw; /* Scales with viewport width */
+//         line-height: 1.2;
+//     }
+// }
+
+
+
+
+@keyframes typingEffectAnimation{
+    from{
+        width:0;
+
+    }
+    to{
+        width:100%;
+
+    }
+}
+
+// .typing-effect {
+//     overflow: hidden;
+//     white-space: nowrap;
+//     border-right: 0.15em solid; /* Optional for cursor effect */
+//     animation: typingEffectAnimation 3s steps(40, end) infinite;
+// }
