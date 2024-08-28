@@ -67,7 +67,7 @@ const Portfolio = () => {
 
     const handleVisitClick = (url) => {
         // Replace with the URL of the YouTube page or video you want to redirect to
-        const youtubeURL = 'https://www.youtube.com/'; // Example URL
+        const youtubeURL = 'https://venkatesanportfolio.netlify.app/'; // Example URL
 
         window.open(url, '_blank');
        // window.location.href = youtubeURL;
